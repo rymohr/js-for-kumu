@@ -1,12 +1,12 @@
 var elements = currentMap.nodes.models;
 
-var circles = currentMap.nodes.models.map(model => {
+var circles = elements.map(element => {
   var obj = {};
-  obj.id = model.entity.attributes._id;
-  obj.label = model.entity.attrs.attributes.label;
-  obj.x = model.position.x;
-  obj.y = model.position.y;
-  obj.radius = model.style.radius;
+  obj.id = element.entity.attributes._id;
+  obj.label = element.entity.attrs.attributes.label;
+  obj.x = element.position.x;
+  obj.y = element.position.y;
+  obj.radius = element.style.radius;
   return obj;
 });
 
@@ -28,7 +28,6 @@ circles = circles.map((c, i, a) => {
     if(detectCollision(c, b)) {
       a++;
     }
-
 
     return a;
   }, 0)
