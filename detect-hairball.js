@@ -44,10 +44,18 @@ function calculateCollisionPercentage(circles) {
   ) / 100;
 }
 
+function calculateCollisionsForColliders(circles) {
+  var colliders = circles.filter(circle => circle.collisions > 0);
+  return Math.round(
+    colliders.reduce((a, b) => {return a + b.collisions}, 0) / colliders.length * 100
+  ) / 100;
+}
+
 function summarize(circles) {
   var obj = {};
   obj['Total elements'] = circles.length;
   obj['Percent of elements colliding'] = calculateCollisionPercentage(circles);
+  obj['Average collisions for colliding circles'] = calculateCollisionsForColliders(circles);
   return obj;
 }
 
