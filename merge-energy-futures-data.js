@@ -1,8 +1,9 @@
 var fs = require('fs');
 
-function mergeEnergyFuturesData(data) {
-  let keys = Object.keys(data[0]).slice(1);
+function mergeEnergyFuturesData(inputFile, outputFileName, outputFileExtension) {
+  let data = JSON.parse(fs.readFileSync(inputFile, 'utf8'));
 
+  let keys = Object.keys(data[0]).slice(1);
   keys = Array.from(
     new Set(
       keys.map(key => {
@@ -11,6 +12,7 @@ function mergeEnergyFuturesData(data) {
       })
     )
   );
+
   let nums = {
     'No connection': 0,
     'Informal conversations':	1,
@@ -55,11 +57,10 @@ function mergeEnergyFuturesData(data) {
     return csv.slice(0, csv.length - 1);
   }
 
-  fs.writeFile('energy-futures-after.csv', createCSV(data), (err) => {
+  fs.writeFile(outputFileName + '.' + outputFileExtension, createCSV(data), (err) => {
     if (err) throw err;
     console.log('yay');
   });
 }
 
-var data = JSON.parse(fs.readFileSync('energy-futures-raw-after.json', 'utf8'));
-mergeEnergyFuturesData(data);
+mergeEnergyFuturesData('energy-futures-raw-after.json', 'energy-futures-after', 'csv');
