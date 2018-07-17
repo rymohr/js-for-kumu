@@ -1,2 +1,6 @@
 # Mac folder files
 .DS_Store
+
+/find-orgs/inputs
+/find-orgs/betweenputs
+/find-orgs/outputs

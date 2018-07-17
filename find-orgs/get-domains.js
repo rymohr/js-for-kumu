@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-function commonDomains(plans, planType) {
+function getDomains(plans, planType) {
   plans = plans.map(plan => {
     plan.accounts = plan.accounts.map(account => {
       account.domains = account.email
@@ -20,9 +20,9 @@ function commonDomains(plans, planType) {
   let domains = Array.from(
     new Set(
       plans.reduce((acc, plan) => {
+        console.log('getting ' + planType + ' ' + plan.plan + ' unique domains...');
         let theseDomains = plan.accounts
           .reduce((a, account, index, array) => {
-            console.log('unique domains ' + plan.plan + ' ' + Math.round(index * 10000 / array.length) / 100 + '%');
             return a.concat(account.domains);
           }, []);
 
@@ -32,7 +32,6 @@ function commonDomains(plans, planType) {
   );
 
   domains = domains.map((domain, index, array) => {
-    // console.log('total accounts ' + Math.round(index * 10000 / array.length) / 100 + '%');
     let obj = new Object();
 
     obj.domain = domain;
@@ -42,8 +41,8 @@ function commonDomains(plans, planType) {
   });
 
   plans.forEach(plan => {
+    console.log('getting ' + planType + ' ' + plan.plan + ' total accounts...');
     plan.accounts.forEach((account, index, array) => {
-      console.log('total accounts ' + plan.plan + ' ' + Math.round(index * 10000 / array.length) / 100 + '%');
 
       let uniqueDomains = Array.from(new Set(account.domains));
 
@@ -52,15 +51,14 @@ function commonDomains(plans, planType) {
         thisDomain.total_accounts ++;
       });
     });
-  })
-
-  console.log(domains.length + ' unique domains');
+  });
 
   domains = domains.sort((a, b) => b.total_accounts - a.total_accounts);
 
   fs.writeFile('./betweenputs/' + planType + '-domains.json', JSON.stringify(domains, null, 2), (err) => {
     if (err) throw err;
     console.log(planType + ' domains written');
+    console.log(domains.length + ' unique ' + planType + ' domains');
   });
 
   fs.writeFile('./betweenputs/' + planType + '-plans-with-domains.json', JSON.stringify(plans, null, 2), (err) => {
@@ -77,5 +75,5 @@ let orgPlans = JSON.parse(
   fs.readFileSync('./betweenputs/org-plans.json', 'utf8')
 );
 
-commonDomains(personalPlans, 'personal');
-commonDomains(orgPlans, 'org');
+getDomains(personalPlans, 'personal');
+getDomains(orgPlans, 'org');
