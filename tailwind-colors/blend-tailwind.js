@@ -21,11 +21,11 @@ async function blendTailwind(tailwind) {
         }, '');
 
         shades.push({
-          "shade": tailwind[i].shades[j].shade,
+          "name": tailwind[i].shades[j].name,
           "hex": hex
         });
 
-        console.log(name + '-' + tailwind[i].shades[j].shade);
+        console.log(name + '-' + tailwind[i].shades[j].name);
 
         await page.close();
       }
@@ -47,11 +47,11 @@ async function blendTailwind(tailwind) {
         }, '');
 
         shades.push({
-          "shade": tailwind[i].shades.shade,
+          "name": tailwind[i].shades.name,
           "hex": hex
         });
 
-        console.log(name + '-' + tailwind[i].shades.shade);
+        console.log(name + '-' + tailwind[i].shades.name);
 
         await page.close();
       }
@@ -75,39 +75,39 @@ let tailwind = [
     "name": "grey",
     "shades": [
       {
-        "shade": "white",
+        "name": "white",
         "hex": "#FFFFFF"
       },
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#F8FAFC"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#F1F5F8"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#DAE1E7"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#B8C2CC"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#8795A1"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#606F7B"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#3D4852"
       },
       {
-        "shade": "black",
+        "name": "black",
         "hex": "#22292F"
       }
     ]
@@ -116,31 +116,31 @@ let tailwind = [
     "name": "red",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#FCEBEA"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#F9ACAA"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#EF5753"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#E3342F"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#CC1F1A"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#621B18"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#3B0D0C"
       }
     ]
@@ -149,31 +149,31 @@ let tailwind = [
     "name": "orange",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#FFF5EB"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#FCD9B6"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#FAAD63"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#F6993F"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#DE751F"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#613B1F"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#462A16"
       }
     ]
@@ -182,31 +182,31 @@ let tailwind = [
     "name": "yellow",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#FCFBEB"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#FFF9C2"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#FFF382"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#FFED4A"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#F2D024"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#684F1D"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#453411"
       }
     ]
@@ -215,31 +215,31 @@ let tailwind = [
     "name": "green",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#E3FCEC"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#A2F5BF"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#51D88A"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#38C172"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#1F9D55"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#1A4731"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#0F2F21"
       }
     ]
@@ -248,31 +248,31 @@ let tailwind = [
     "name": "teal",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#E8FFFE"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#A0F0ED"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#64D5CA"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#4DC0B5"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#38A89D"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#20504F"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#0D3331"
       }
     ]
@@ -281,31 +281,31 @@ let tailwind = [
     "name": "blue",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#EFF8FF"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#BCDEFA"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#6CB2EB"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#3490DC"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#2779BD"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#1C3D5A"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#12283A"
       }
     ]
@@ -314,31 +314,31 @@ let tailwind = [
     "name": "indigo",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#E6E8FF"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#B2B7FF"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#7886D7"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#6574CD"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#5661B3"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#2F365F"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#191E38"
       }
     ]
@@ -347,31 +347,31 @@ let tailwind = [
     "name": "purple",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#F3EBFF"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#D6BBFC"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#A779E9"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#9561E2"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#794ACF"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#382B5F"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#21183C"
       }
     ]
@@ -380,31 +380,31 @@ let tailwind = [
     "name": "pink",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#FFEBEF"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#FFBBCA"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#FA7EA8"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#F66D9B"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#EB5286"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#6F213F"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#451225"
       }
     ]

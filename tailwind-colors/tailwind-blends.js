@@ -3,31 +3,31 @@ let blends = [
     "name": "red-orange",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#FEF0EB"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#FBC3B0"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#F5825B"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#ED6737"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#D54A1D"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#622B1C"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#411C11"
       }
     ]
@@ -36,31 +36,31 @@ let blends = [
     "name": "orange-yellow",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#FEF8EB"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#FEE9BC"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#FDD073"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#FBC345"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#E8A322"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#65451E"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#462F14"
       }
     ]
@@ -69,31 +69,31 @@ let blends = [
     "name": "yellow-green",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#F0FCEC"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#D1F7C1"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#A8E686"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#9CD75E"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#89B73D"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#414B27"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#2A3219"
       }
     ]
@@ -102,31 +102,31 @@ let blends = [
     "name": "green-teal",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#E6FEF5"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#A1F3D6"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#5BD7AA"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#43C194"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#2CA379"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#1D4C40"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#0E3129"
       }
     ]
@@ -135,31 +135,31 @@ let blends = [
     "name": "teal-blue",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#ECFCFF"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#AEE7F4"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#68C4DB"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#41A8C9"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#3091AD"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#1E4755"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#102E36"
       }
     ]
@@ -168,31 +168,31 @@ let blends = [
     "name": "blue-indigo",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#EBF0FF"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#B7CBFD"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#729CE1"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#4D82D5"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#3F6DB8"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#263A5D"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#162339"
       }
     ]
@@ -201,31 +201,31 @@ let blends = [
     "name": "indigo-purple",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#EDEAFF"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#C4B9FE"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#9080E0"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#7D6BD8"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#6856C1"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#34315F"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#1D1B3A"
       }
     ]
@@ -234,31 +234,31 @@ let blends = [
     "name": "purple-pink",
     "shades": [
       {
-        "shade": "lightest",
+        "name": "lightest",
         "hex": "#F9EBF7"
       },
       {
-        "shade": "lighter",
+        "name": "lighter",
         "hex": "#EBBBE3"
       },
       {
-        "shade": "light",
+        "name": "light",
         "hex": "#D17CC9"
       },
       {
-        "shade": "base",
+        "name": "base",
         "hex": "#C667BF"
       },
       {
-        "shade": "dark",
+        "name": "dark",
         "hex": "#B24EAB"
       },
       {
-        "shade": "darker",
+        "name": "darker",
         "hex": "#54264F"
       },
       {
-        "shade": "darkest",
+        "name": "darkest",
         "hex": "#331531"
       }
     ]

@@ -1,0 +1,20 @@
+[
+  {
+    "primary-100": "#E8FFFE",
+    "primary-200": "#A0F0ED",
+    "primary-300": "#64D5CA",
+    "primary": "#4DC0B5",
+    "primary-500": "#38A89D",
+    "primary-600": "#20504F",
+    "primary-700": "#0D3331"
+  },
+  {
+    "secondary-100": "#E6E8FF",
+    "secondary-200": "#B2B7FF",
+    "secondary-300": "#7886D7",
+    "secondary": "#6574CD",
+    "secondary-500": "#5661B3",
+    "secondary-600": "#2F365F",
+    "secondary-700": "#191E38"
+  }
+]
