@@ -77,7 +77,7 @@ function selectColors(colors, colorNames, shadeNames) {
   );
 }
 
-let colors = ['teal', 'indigo'];
+let colors = ['blue-indigo', 'red-orange'];
 
 /*
  * Literal color names - blue, red, yellow, etc.
