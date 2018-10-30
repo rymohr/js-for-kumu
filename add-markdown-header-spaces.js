@@ -3,7 +3,7 @@ function replaceWithSpace(match) {
 }
 
 function addSpaces(description) {
-  let regexp = /(?:^#+\S|\n#+[^#\s])/g
+  let regexp = /(?:^ {0,3}#+[^# ]|\n {0,3}#+[^# ]|\n {0,3}> {0,4}#+[^# ])/g
 
   return description.replace(regexp, replaceWithSpace)
 }
