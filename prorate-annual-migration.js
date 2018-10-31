@@ -40,8 +40,8 @@ function calculateOldPrice(identifier) {
 }
 
 function calculateNewPrice(newTotalProjects, discount, waiveMembershipFee) {
-  let membershipFee = (waiveMembershipFee) ? 0 : 1000 * 12 * (1 - discount)
-  let projectFee = 2000 * newTotalProjects * 12 * (1 - discount)
+  let membershipFee = (waiveMembershipFee) ? 0 : 1000 * .8 * 12 * (1 - discount)
+  let projectFee = 2000 * newTotalProjects * .8 * 12 * (1 - discount)
 
   return membershipFee + projectFee
 }
@@ -66,12 +66,14 @@ function prorateAnnualMigration(planStart, oldPlanIdentifier, newTotalProjects, 
   let oldPrice = calculateOldPrice(oldPlanIdentifier)
   let newPrice = calculateNewPrice(newTotalProjects, discount, waiveMembershipFee)
 
-  let proratedCharge = newPrice * percentTimeRemaining
   let proratedRefund = oldPrice * percentTimeRemaining
 
-  let proratedTotal = Math.round(proratedCharge - proratedRefund)
+  let proratedTotal = Math.round(newPrice - proratedRefund)
 
-  console.log(proratedTotal / 100)
+  console.log(`oldPrice: ${oldPrice / 100}`)
+  console.log(`newPrice: ${newPrice / 100}`)
+  console.log(`proratedRefund: ${proratedRefund / 100}`)
+  console.log(`proratedTotal: ${proratedTotal / 100}`)
 }
 
-prorateAnnualMigration('2018-03-19', 50, 50, 0.2, false)
+prorateAnnualMigration('2018-03-19', 50, 50, 0, false)
